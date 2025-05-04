@@ -10,4 +10,4 @@ RUN curl -Lo /usr/local/bin/k9s https://github.com/derailed/k9s/releases/latest/
 
 EXPOSE 3000
 
-ENTRYPOINT ["/bin/sh", "-c", "gotty -p 3000 k9s"]
+ENTRYPOINT ["/bin/sh", "-c", "gotty -w -p 3000 k9s -n home-automation"]
